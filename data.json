@@ -1,0 +1,15 @@
+{
+    "NAME":"Swatantra Nigam",
+    "ABOUT_ME":"I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively",
+    "LANGUAGES":[
+        "Python",
+        "C++",
+        "C",
+        "Java"
+    ],
+    "PROJECTS":[
+        ["filter_drama","Portfolio","Portfolio is my first project and basic learning for django and it also contain my informations."],
+        ["Blog","Blog","This is my Second project which i created during the learning od models in django i  love it most beacuse it contaion lots of models."],
+        ["whatshot","Third","Lorem ipsum dolor sit amet."]
+    ]
+}

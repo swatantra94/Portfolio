@@ -1,0 +1,37 @@
+{% extends 'main/base.html' %}
+    {% block content %}
+    <div class="container" >
+        <div class="row">
+            <br>
+            <br>
+            <br>
+            <div class="col s10 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                      <span class="card-title">My Projects</span>
+                      <p>These are my few of projects which i created during my learnings of django.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s10 m6">
+                <ul class="collapsible">
+                    {% for icon,project_name,about in projects %}
+                    <li>
+                    <div class="collapsible-header"><i class="material-icons">{{icon}}</i>{{project_name}}</div>
+                    <div class="collapsible-body"><span>{{about}}</span></div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+      {% endblock %}
+      {% block script %}
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+        });
+        </script>
+    {% endblock %}
+        
